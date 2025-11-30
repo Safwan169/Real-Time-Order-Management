@@ -41,10 +41,10 @@ app.use(errorHandler);
 
 // Start server
 app.listen(PORT, () => {
-  console.log(` Express server is running on port ${PORT}`);
-  console.log(` Environment: ${process.env.NODE_ENV || 'development'}`);
-  console.log(` Socket.IO server runs separately on port ${process.env.SOCKET_PORT || 3001}`);
-  console.log(` Run 'npm run socket:dev' in another terminal to start Socket.IO server`);
+  console.log(`Express server is running on port ${PORT}`);
+  console.log(`Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`Socket.IO server runs separately on port ${process.env.SOCKET_PORT || 3001}`);
+  console.log(`Run 'npm run socket:dev' in another terminal to start Socket.IO server`);
 });
 
 export default app;
